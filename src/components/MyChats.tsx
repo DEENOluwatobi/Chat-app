@@ -85,7 +85,7 @@ const MyChats: React.FC<MyChatsProps> = ({ setChatBox, setSelectedChat, setDetai
           );
           })}
         <div className='h-[50px] w-full flex items-center justify-center'>
-          <p className='text-sm text-white'>Chats are <span className='text-sky-300'>end to end encrypted</span></p>
+          <p className='text-sm text-white'>Messages are <span className='text-sky-300'>end to end encrypted</span></p>
         </div>
       </div>
     </div>

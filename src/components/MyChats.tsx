@@ -37,7 +37,7 @@ const MyChats: React.FC<MyChatsProps> = ({ setChatBox, setSelectedChat, setDetai
       <Status status={status} setStatus={setStatus} />
       <div className='w-full h-[60px] bg-primary flex items-center pl-4 pr-3 justify-between'>
         <div className='w-[40px] h-[40px] rounded-full overflow-hidden cursor-pointer' onClick={() => setSideBar(true)}>
-          <img src="../Images/man.jpg" alt="" className='w-full h-full object-cover' />
+          <img src="https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814_1280.jpg" alt="" className='w-full h-full object-cover' />
         </div>
 
         <div className='flex gap-3 relative'>

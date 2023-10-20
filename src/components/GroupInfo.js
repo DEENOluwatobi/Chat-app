@@ -25,8 +25,8 @@ const GroupInfo = ({ selectedChat,setSearch  }) => {
       }}
       className="mt-[60px] w-full ">
       <div className="w-full h-[220px] bg-[#111B21] flex flex-col items-center justify-center">
-        <div className="w-[150px] rounded-full overflow-hidden">
-          <img src={selectedChat.pic} alt="" />
+        <div className="w-full h-full flex justify-center items-center rounded-full overflow-hidden">
+          <img src={selectedChat.pic} className="w-[120px] h-[120px] object-cover rounded-full" alt=""/>
         </div>
         <h1 className="text-white text-xl">{selectedChat.name}</h1>
         <p className="text-slate-500">{`${users.length -1} participants`}</p>
@@ -152,7 +152,7 @@ const GroupInfo = ({ selectedChat,setSearch  }) => {
         <div className="w-full h-10 px-10 py-2 flex items-center">
           <p className="text-slate-400 text-sm">{`${users.length - 1} participants`}</p>
           <button className="text-icon ml-auto" onClick={()=>setSearch(true)}>
-          <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px" y="0px" enable-background="new 0 0 24 24"><path fill="currentColor" d="M15.009,13.805h-0.636l-0.22-0.219c0.781-0.911,1.256-2.092,1.256-3.386 c0-2.876-2.332-5.207-5.207-5.207c-2.876,0-5.208,2.331-5.208,5.207s2.331,5.208,5.208,5.208c1.293,0,2.474-0.474,3.385-1.255 l0.221,0.22v0.635l4.004,3.999l1.194-1.195L15.009,13.805z M10.201,13.805c-1.991,0-3.605-1.614-3.605-3.605 s1.614-3.605,3.605-3.605s3.605,1.614,3.605,3.605S12.192,13.805,10.201,13.805z"></path></svg>
+            <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px" y="0px" enable-background="new 0 0 24 24"><path fill="currentColor" d="M15.009,13.805h-0.636l-0.22-0.219c0.781-0.911,1.256-2.092,1.256-3.386 c0-2.876-2.332-5.207-5.207-5.207c-2.876,0-5.208,2.331-5.208,5.207s2.331,5.208,5.208,5.208c1.293,0,2.474-0.474,3.385-1.255 l0.221,0.22v0.635l4.004,3.999l1.194-1.195L15.009,13.805z M10.201,13.805c-1.991,0-3.605-1.614-3.605-3.605 s1.614-3.605,3.605-3.605s3.605,1.614,3.605,3.605S12.192,13.805,10.201,13.805z"></path></svg>
           </button>
         </div>
         {users.map((user) => {

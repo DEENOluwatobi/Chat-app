@@ -10,7 +10,7 @@ const UserGroup = ({user}) => {
       <div className="h-full w-[80%] py-3">
         <div>
           <h1 className="capitalize text-white">{user.name}</h1>
-          <p className='text-slate-500 text-sm'>Hai, saya menggunakan WhatsApp.</p>
+          <p className='text-slate-500 text-sm'>{user.status}</p>
         </div>
 
       </div>

@@ -78,7 +78,7 @@ const SearchUserGroup = ({ search, setSearch }) => {
                     id="search-form"
                     type="text"
                     className="px-3 bg-transparent text-icon outline-none placeholder:text-sm ml-4"
-                    placeholder={searchBtn ? "" : "Cari.."}
+                    placeholder={searchBtn ? "" : "Search"}
                     onFocus={() => setSearchBtn(!search)}
                   />
                 </div>

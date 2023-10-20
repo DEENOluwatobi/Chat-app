@@ -1,5 +1,4 @@
 import React from 'react'
-import hero from "../assets/img/hero.png"
 
 const HeroBg = () => {
   return (
@@ -9,7 +8,7 @@ const HeroBg = () => {
             Chat App
         </span>
         <p className='text-line text-[1em]'>Click on any chat to begin</p>
-        <p className='text-white'>Chats are end-to-end encrypted</p>
+        <p className='text-white text-[.8em] mt-4'>Chats are end-to-end encrypted</p>
       </div>
       <span className='w-full h-[6px] bg-line block mt-auto'></span>
     </div>

@@ -41,13 +41,13 @@ const SearchMsg = ({ searchMsg, setSearhMsg,selectedChat }) => {
               <AiOutlineSearch className='text-icon transition-all ease-in-out duration-300 cursor-pointer' onClick={()=>setSearch(!search)}/>
             )
             }
-            <input id='search-form' type="text" className='px-3 bg-transparent text-icon outline-none placeholder:text-sm ml-4' placeholder={search ? "" : "Cari.."} onFocus={() => setSearch(!search)} />
+            <input id='search-form' type="text" className='px-3 bg-transparent text-icon outline-none placeholder:text-sm ml-4' placeholder={search ? "" : "Search.."} onFocus={() => setSearch(!search)} />
           </div>
         </form>
           </div>
 
           <div className='text-slate-700 text-sm mt-10 w-full h-[30px] text-center'>
-            <h1>{`Cari pesan di ${selectedChat.name}`}</h1>
+            <h1>{`Search ${selectedChat.name}'s messages`}</h1>
           </div>
         </motion.div>
       )}

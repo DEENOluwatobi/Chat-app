@@ -1,5 +1,5 @@
 import { AnimatePresence,motion } from 'framer-motion'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 const Menu = ({ menu, x, y, setX, setY, setMenu ,selectedChat}) => {
   document.addEventListener("click", (e) => {
@@ -42,22 +42,21 @@ const Menu = ({ menu, x, y, setX, setY, setMenu ,selectedChat}) => {
           {selectedChat.isGroupChat ? 
             (
               <ul className='w-full text-white'>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Info group</li>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Pilih pesan</li>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Bisukan notifikasi</li>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Bersikan pesan</li>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Keluar gorup</li>
+                <li className='py-2 hover:bg-secondary px-4'>Group info</li>
+                <li className='py-2 hover:bg-secondary px-4'>Select message</li>
+                <li className='py-2 hover:bg-secondary px-4'>Mute notifications</li>
+                <li className='py-2 hover:bg-secondary px-4'>Clear messages</li>
+                <li className='py-2 hover:bg-secondary px-4'>Exit group</li>
               </ul>
             )
             : (
               <ul className='w-full text-white'>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Info kontak</li>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Pilih pesan</li>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Tutup chat</li>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Bisukan notifikasi</li>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Pesan sementara</li>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Bersikan pesan</li>
-                <li className='py-2 hover:bg-secondary px-4 cursor-pointer'>Hapus chat</li>
+                <li className='py-2 hover:bg-secondary px-4'>Contact info</li>
+                <li className='py-2 hover:bg-secondary px-4'>Select message</li>
+                <li className='py-2 hover:bg-secondary px-4'>Close chat</li>
+                <li className='py-2 hover:bg-secondary px-4'>Mute notifications</li>
+                <li className='py-2 hover:bg-secondary px-4'>Clear messages</li>
+                <li className='py-2 hover:bg-secondary px-4'>Delete chat</li>
               </ul>
             )
           }

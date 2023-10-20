@@ -27,9 +27,8 @@ const Home = () => {
           <ProfileMsg profile={profile} setProfile={setProfile} selectedChat={selectedChat} search={search} setSearch={setSearch} />
           <SearchMsg searchMsg={searchMsg} setSearhMsg={setSearhMsg} selectedChat={selectedChat} />
         </>
-
-        
-      ) : (
+      
+        ) : (
           <HeroBg/>
       )}
     </section>

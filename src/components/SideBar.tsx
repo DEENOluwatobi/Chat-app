@@ -131,7 +131,7 @@ const SideBar: React.FC<SideBarProps> = ({ sidebar, setSideBar, setDetailPic }) 
   const [x, setX] = useState<number | undefined>();
   const [y, setY] = useState<number | undefined>();
 
-  const fotoProfile = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const photoProfile = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     setX(e.pageX);
     setY(e.pageY);
     setMenu(!menu);
@@ -172,7 +172,7 @@ const SideBar: React.FC<SideBarProps> = ({ sidebar, setSideBar, setDetailPic }) 
               className='flex items-center mt-auto ml-5'
             >
               <BiArrowBack className='text-white text-2xl cursor-pointer' onClick={() => setSideBar(false)} />
-              <h1 className='text-xl text-white ml-8 font-medium'>Profil</h1>
+              <h1 className='text-xl text-white ml-8 font-medium'>Profile</h1>
             </motion.div>
           </div>
           <motion.div
@@ -185,11 +185,11 @@ const SideBar: React.FC<SideBarProps> = ({ sidebar, setSideBar, setDetailPic }) 
             }}
             className='w-full flex justify-center mt-8'
           >
-            <div className='w-[205px] rounded-full overflow-hidden group relative cursor-pointer' onClick={(e) => fotoProfile(e)}>
+            <div className='w-[205px] rounded-full overflow-hidden group relative cursor-pointer' onClick={(e) => photoProfile(e)}>
               <img src="https://pps.whatsapp.net/v/t61.24694-24/295143056_444739964202427_3835901422192902002_n.jpg?ccb=11-4&amp;oh=01_AVwJkBw4SQufrU2ex9TEB5oKRUQPKQ3sEa7N12-WkXsziA&amp;oe=635211A8" alt="" />
               <div className='w-full h-full absolute top-0 z-50 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-200 flex flex-col justify-center items-center'>
                 <IoCameraSharp className='text-white text-2xl' />
-                <h1 className='text-center text-white text-xs w-1/2'>UBAH FOTO PROFILE</h1>
+                <h1 className='text-center text-white text-xs w-1/2'>CHANGE PROFILE PICTURE</h1>
               </div>
             </div>
           </motion.div>
@@ -204,12 +204,12 @@ const SideBar: React.FC<SideBarProps> = ({ sidebar, setSideBar, setDetailPic }) 
             }}
             className='px-7 flex flex-col gap-6 mt-9'
           >
-            <h3 className='text-line text-sm'>Nama Anda</h3>
+            <h3 className='text-line text-sm'>Your name</h3>
             <div className='flex items-center'>
               <h1 className='text-xl text-white'>Anthony</h1>
               <RiPencilFill className='text-icon ml-auto text-2xl' />
             </div>
-            <p className='text-icon text-sm'>Ini bukan nama pengguna atau PIN Anda. Nama ini akan ditampilkan ke kontak WhatsApp Anda.</p>
+            <p className='text-icon text-sm'>This is not your username. This name will be displayed to your WhatsApp contacts.</p>
           </motion.div>
 
           <motion.div
@@ -223,9 +223,9 @@ const SideBar: React.FC<SideBarProps> = ({ sidebar, setSideBar, setDetailPic }) 
             }}
             className='px-7 flex flex-col gap-6 mt-9'
           >
-            <h3 className='text-line text-sm'>Info</h3>
+            <h3 className='text-line text-sm'>Information</h3>
             <div className='flex items-center'>
-              <h1 className='text-lg text-white'>Hai, saya menggunakan WhatsApp.</h1>
+              <h1 className='text-sm text-icon'>Hi, I am using WhatsApp.</h1>
               <RiPencilFill className='text-icon ml-auto text-2xl' />
             </div>
           </motion.div>

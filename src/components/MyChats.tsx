@@ -37,7 +37,7 @@ const MyChats: React.FC<MyChatsProps> = ({ setChatBox, setSelectedChat, setDetai
       <Status status={status} setStatus={setStatus} />
       <div className='w-full h-[60px] bg-primary flex items-center pl-4 pr-3 justify-between'>
         <div className='w-[40px] h-[40px] rounded-full overflow-hidden cursor-pointer' onClick={() => setSideBar(true)}>
-          <img src="https://pps.whatsapp.net/v/t61.24694-24/295143056_444739964202427_3835901422192902002_n.jpg?ccb=11-4&amp;oh=01_AVwJkBw4SQufrU2ex9TEB5oKRUQPKQ3sEa7N12-WkXsziA&amp;oe=635211A8" alt="" className='w-full h-full' />
+          <img src="../Images/man.jpg" alt="" className='w-full h-full object-cover' />
         </div>
 
         <div className='flex gap-3 relative'>
@@ -85,7 +85,7 @@ const MyChats: React.FC<MyChatsProps> = ({ setChatBox, setSelectedChat, setDetai
           );
           })}
         <div className='h-[50px] w-full flex items-center justify-center'>
-          <p className='text-sm text-white'>Messages are <span className='text-sky-300'>end to end encrypted</span></p>
+          <p className='text-sm text-white'>Chats are <span className='text-sky-300'>end to end encrypted</span></p>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const SearchMsg = ({ searchMsg, setSearhMsg,selectedChat }) => {
             <button className='text-icon ml-6' onClick={()=>setSearhMsg(false)}>
             <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" fill="currentColor" enable-background="new 0 0 24 24"><path enable-background="new" d="M19.1,17.2l-5.3-5.3l5.3-5.3l-1.8-1.8L12,10.2L6.7,4.9L4.9,6.6 l5.3,5.3l-5.3,5.3L6.7,19l5.3-5.3l5.3,5.3L19.1,17.2z"></path></svg>
             </button>
-            <h1 className='text-white text-lg'>Mencari pesan</h1>
+            <h1 className='text-white text-lg'>Search for messages</h1>
           </div>
           <div className='flex w-full h-[50px] py-[4px] px-3 items-center'>
         <form  action="" className='w-full'>

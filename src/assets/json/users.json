@@ -35,6 +35,7 @@
   "password": "$2a$10$vrPjGbHq6ZVjHsyy8Wg/KOnvI8KhZtc5NX9uWYjl6y1p6jmVrvGjy",
   "pic": "https://cdn.pixabay.com/photo/2015/06/22/08/38/children-817368_1280.jpg",
   "lstmsg": "Good-morning everyone",
+  "phone": "+09 123 2323 22",
   "status": "Hi, I'm using Whatsapp",
   "lstTime":"9:00",
   "createdAt": {
@@ -58,6 +59,7 @@
   "password": "$2a$10$armlKojP.c6.ZJBqmdUi1u2yscJjrGwW3QchRPLaSX/JG7P8R6FTa",
   "pic": "https://cdn.pixabay.com/photo/2019/06/02/17/33/woman-4246954_1280.jpg",
   "lstmsg": "Hi",
+  "phone": "+89 123 2723 56",
   "lstTime":"19:00",
   "status": "Hi",
   "createdAt": {
@@ -83,6 +85,7 @@
   "password": "$2a$10$vmOuzRp7PasCWVPPvi35ku6JGWCIToGuDCtea0bXPWNNGLnKoojJa",
   "pic": "https://cdn.pixabay.com/photo/2015/08/05/04/25/people-875617_640.jpg",
   "lstmsg": "Good-morning to you sir",
+  "phone": "+86 233 2123 12",
   "lstTime":"20:00",
   "status": "Available",
   "createdAt": {
@@ -108,6 +111,7 @@
   "password": "$2a$10$FzM8holmtNznHEOteiLCo.6hF3AsR0CERBwh/ajsUyWPoQaF1fG0S",
   "pic": "https://cdn.pixabay.com/photo/2020/01/24/08/43/redhead-4789668_1280.jpg",
   "lstmsg": "Good-morning ",
+  "phone": "+09 123 2323 22",
   "status": "Busy",
   "lstTime":"21:20",
   "createdAt": {
@@ -132,6 +136,7 @@
   "email": "bola@gmail.com",
   "password": "$2a$10$eTVws8RBmfx1Ax78vEYVOOeDIBEeRz6Tf238kMl2Q8tVcn3iOh0Iq",
   "pic": "https://cdn.pixabay.com/photo/2016/11/29/01/34/man-1866572_640.jpg",
+  "phone": "+02 123 2365 22",
   "lstmsg": "They will come next week",
   "lstTime":"21:30",
   "status": "At work",
@@ -157,6 +162,7 @@
   "email": "yinka@gmail.com",
   "password": "$2a$10$PACGksBO25Is9wvve9l7dui6oCpoFsM9IVkpEJT2Tl1T/zEK/e0xm",
   "pic": "https://cdn.pixabay.com/photo/2020/02/23/15/09/woman-4873600_640.jpg",
+  "phone": "+39 123 2323 22",
   "lstmsg": "How far bro",
   "lstTime":"22:45",
   "status": "Hello",
@@ -182,6 +188,7 @@
   "email": "toni@gmail.com",
   "password": "$2a$10$w6nFNoNpO8rz6ZaSmXrseu/hs6d7hwL7Q1ccYBw.gnbe5SXFvV4iu",
   "pic": "https://cdn.pixabay.com/photo/2020/08/21/08/46/african-5505598_1280.jpg",
+  "phone": "+29 123 233 22",
   "lstmsg": "Good-morning sir",
   "status": "What's up",
   "createdAt": {
@@ -206,6 +213,7 @@
   "email": "simbi@gmail.com",
   "password": "$2a$10$d.t4t8y7.Hx1Jjl4G9BoUeEuPhSJQ0.u9COAlYobGPLRwF1VonkBq",
   "pic": "https://cdn.pixabay.com/photo/2014/10/13/18/10/girl-487065_640.jpg",
+  "phone": "+09 123 2323 22",
   "lstmsg": "Hello hun",
   "status": "Hello world",
   "lstTime":"23:10",

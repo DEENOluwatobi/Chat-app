@@ -6,6 +6,8 @@ import Menu from "./Menu";
 import OptionChatBox from "./OptionChatBox";
 import MenuTextMsg from "./MenuTextMsg";
 import MenuTextMsgL from "./MenuTextMsgL";
+
+
 const ChatBox = ({ selectedChat,profile, setProfile ,searchMsg,setSearhMsg}) => {
   const [user, setUser] = useState([])
   const [menu, setMenu] = useState(false)
@@ -76,11 +78,11 @@ const ChatBox = ({ selectedChat,profile, setProfile ,searchMsg,setSearhMsg}) => 
           
           <div className="text-white h-8 rounded-b-lg rounded-tr-lg px-1 mt-12 mr-3 bg-primary relative items-center flex py-1 group">
             <MenuTextMsgL menuTextL={menuTextL} />
-            <p className="text-sm px-2">Hello world</p>
+            <p className="text-sm px-2">{selectedChat.lstmsg}</p>
             <span className="text-primary absolute top-0 -left-2">
             <svg viewBox="0 0 8 13" width="8" height="13" class=""><path opacity=".13" fill="#0000000" d="M1.533 3.568 8 12.193V1H2.812C1.042 1 .474 2.156 1.533 3.568z"></path><path fill="currentColor" d="M1.533 2.568 8 11.193V0H2.812C1.042 0 .474 1.156 1.533 2.568z"></path></svg>
             </span>
-            <p className="text-icon text-xs mt-auto mr-1">19.00</p>
+            <p className="text-icon text-xs mt-auto mr-1">{selectedChat.lstTime}</p>
             <button id="menuTextbtn" className="absolute right-1 top-1 text-icon bg-primary/70 rounded-b-full backdrop:blur-xl opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-200" onClick={()=>setMenuTextL(!menuTextL)}>
             <svg viewBox="0 0 18 18" height="18" width="18" preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px" y="0px" enable-background="new 0 0 18 18"><path fill="currentColor" d="M3.3,4.6L9,10.3l5.7-5.7l1.6,1.6L9,13.4L1.7,6.2L3.3,4.6z"></path></svg>
             </button>
@@ -88,7 +90,7 @@ const ChatBox = ({ selectedChat,profile, setProfile ,searchMsg,setSearhMsg}) => 
 
           <div className="text-white h-8 rounded-b-lg rounded-tl-lg px-1 mt-5 mr-3 bg-[#008069] relative items-center flex py-1 group">
             <MenuTextMsg menuText={menuText} setMenuText={setMenuText} />
-            <p className="text-sm px-2">Hello world</p>
+            <p className="text-sm px-2">Hello</p>
             <span className="text-[#008069] absolute top-0 -right-2">
             <svg viewBox="0 0 8 13" width="8" height="13"><path opacity=".13" d="M5.188 1H0v11.193l6.467-8.625C7.526 2.156 6.958 1 5.188 1z"></path><path fill="currentColor" d="M5.188 0H0v11.193l6.467-8.625C7.526 1.156 6.958 0 5.188 0z"></path></svg>
             </span>

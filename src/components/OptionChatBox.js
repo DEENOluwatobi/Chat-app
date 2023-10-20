@@ -21,22 +21,21 @@ const OptionChatBox = ({option,selectedChat}) => {
      {selectedChat.isGroupChat ? 
             (
               <ul className='w-full text-white'>
-                <li className='py-2 hover:bg-secondary px-4'>Info group</li>
-                <li className='py-2 hover:bg-secondary px-4'>Pilih pesan</li>
-                <li className='py-2 hover:bg-secondary px-4'>Bisukan notifikasi</li>
-                <li className='py-2 hover:bg-secondary px-4'>Bersikan pesan</li>
-                <li className='py-2 hover:bg-secondary px-4'>Keluar gorup</li>
+                <li className='py-2 hover:bg-secondary px-4'>Group info</li>
+                <li className='py-2 hover:bg-secondary px-4'>Select message</li>
+                <li className='py-2 hover:bg-secondary px-4'>Mute notifications</li>
+                <li className='py-2 hover:bg-secondary px-4'>Clear messages</li>
+                <li className='py-2 hover:bg-secondary px-4'>Exit group</li>
               </ul>
             )
             : (
               <ul className='w-full text-white'>
-                <li className='py-2 hover:bg-secondary px-4'>Info kontak</li>
-                <li className='py-2 hover:bg-secondary px-4'>Pilih pesan</li>
-                <li className='py-2 hover:bg-secondary px-4'>Tutup chat</li>
-                <li className='py-2 hover:bg-secondary px-4'>Bisukan notifikasi</li>
-                <li className='py-2 hover:bg-secondary px-4'>Pesan sementara</li>
-                <li className='py-2 hover:bg-secondary px-4'>Bersikan pesan</li>
-                <li className='py-2 hover:bg-secondary px-4'>Hapus chat</li>
+                <li className='py-2 hover:bg-secondary px-4'>Contact info</li>
+                <li className='py-2 hover:bg-secondary px-4'>Select message</li>
+                <li className='py-2 hover:bg-secondary px-4'>Close chat</li>
+                <li className='py-2 hover:bg-secondary px-4'>Mute notifications</li>
+                <li className='py-2 hover:bg-secondary px-4'>Clear messages</li>
+                <li className='py-2 hover:bg-secondary px-4'>Delete chat</li>
               </ul>
             )
           }

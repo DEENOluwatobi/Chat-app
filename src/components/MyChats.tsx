@@ -67,7 +67,7 @@ const MyChats: React.FC<MyChatsProps> = ({ setChatBox, setSelectedChat, setDetai
             ) : (
               <AiOutlineSearch className='text-icon transition-all ease-in-out duration-300 cursor-pointer' onClick={() => setSearch(!search)} />
             )}
-            <input id='search-form' type="text" className='px-3 bg-transparent text-icon outline-none placeholder:text-sm ml-4' placeholder={filter ? "Cari chat yang belum dibaca" : "Cari atau mulai chat baru"} onFocus={() => setSearch(!search)} />
+            <input id='search-form' type="text" className='px-3 bg-transparent text-icon outline-none placeholder:text-sm ml-4' placeholder={filter ? "Search for unread chats" : "Search or start a new chat"} onFocus={() => setSearch(!search)} />
           </div>
         </form>
         <button className={`text-icon h-7 w-7 flex p-1 ml-2 mt-1 justify-center items-center ${filter ? "bg-line rounded-full full" : ""}`} onClick={() => setFilter(!filter)}>

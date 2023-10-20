@@ -24,23 +24,22 @@ const GroupInfo = ({ selectedChat,setSearch  }) => {
         },
       }}
       className="mt-[60px] w-full ">
-      <div className="w-full h-[315px] bg-[#111B21] flex flex-col items-center justify-center">
-        <div className="w-[200px] rounded-full overflow-hidden">
+      <div className="w-full h-[220px] bg-[#111B21] flex flex-col items-center justify-center">
+        <div className="w-[150px] rounded-full overflow-hidden">
           <img src={selectedChat.pic} alt="" />
         </div>
-        <h1 className="text-white text-2xl">{selectedChat.name}</h1>
-        <p className="text-slate-500">{`Group ${users.length -1} peserta`}</p>
+        <h1 className="text-white text-xl">{selectedChat.name}</h1>
+        <p className="text-slate-500">{`${users.length -1} participants`}</p>
       </div>
 
       <div className="w-full h-[88px] bg-secondary mt-3 px-8 flex flex-col justify-center">
         <p className="text-white">
-          Tetap kawal Ayyub hanya untuk bersenang-senang, yang lain pengalihan
-          isu.
+          Nothing for group description
         </p>
       </div>
 
       <div className="w-full h-[55px] bg-secondary flex items-center px-8 justify-between">
-        <p className="text-slate-500 text-sm">Media, tautan, dan dok</p>
+        <p className="text-slate-500 text-sm">Media, links, and docs</p>
         <div className="flex items-center h-full text-slate-500 gap-3">
           <p>1</p>
           <button>
@@ -81,7 +80,7 @@ const GroupInfo = ({ selectedChat,setSearch  }) => {
                   d="m8.3 10.2-2.5 1.7c-.3.2-.8-.1-.7-.5L6 8.6c.1-.2 0-.4-.2-.5L3.5 6.3c-.4-.3-.2-.8.2-.8l3-.1c.2 0 .3-.1.4-.3l1-2.8c.1-.4.7-.4.8 0l1 2.8c.1.2.2.3.4.3l3 .1c.4 0 .6.5.3.8l-2.4 1.8c-.1.1-.2.3-.2.5l.9 2.9c.1.4-.3.7-.7.5l-2.5-1.7c-.1-.2-.3-.2-.4-.1z"></path>
               </svg>
             </button>
-            <h1 className="text-white">Pesan berbintang</h1>
+            <h1 className="text-white">Starred messages</h1>
           </div>
           <button className="text-icon ml-auto">
             <svg
@@ -114,7 +113,7 @@ const GroupInfo = ({ selectedChat,setSearch  }) => {
                   d="M12 21.7c.9 0 1.7-.8 1.7-1.7h-3.4c0 .9.8 1.7 1.7 1.7zm5.6-5.2v-4.7c0-2.7-1.8-4.8-4.3-5.4v-.6c0-.7-.6-1.3-1.3-1.3s-1.3.6-1.3 1.3v.6c-2.5.6-4.3 2.7-4.3 5.4v4.7l-1.7 1.7v.9h14.6v-.9l-1.7-1.7z"></path>
               </svg>
             </button>
-            <h1 className="text-white">Bisukan notifikasi</h1>
+            <h1 className="text-white">Mute notifications</h1>
           </div>
           <div className="h-4 w-10 bg-slate-600 ml-auto rounded-full flex items-center relative">
             <motion.div
@@ -140,9 +139,9 @@ const GroupInfo = ({ selectedChat,setSearch  }) => {
               </svg>
             </button>
             <div>
-              <h1 className="text-white">Enkripsi</h1>
+              <h1 className="text-white">Encryption</h1>
               <p className="text-slate-500 text-sm">
-                Pesan terenkripsi secara end-to-end. Klik untuk memverifikasi.
+                The messages are encrypted end-to-end. Click to verify.
               </p>
             </div>
           </div>
@@ -151,7 +150,7 @@ const GroupInfo = ({ selectedChat,setSearch  }) => {
         
       <div className="w-full h-auto bg-secondary mt-3">
         <div className="w-full h-10 px-10 py-2 flex items-center">
-          <p className="text-slate-400 text-sm">{`${users.length - 1} peserta`}</p>
+          <p className="text-slate-400 text-sm">{`${users.length - 1} participants`}</p>
           <button className="text-icon ml-auto" onClick={()=>setSearch(true)}>
           <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px" y="0px" enable-background="new 0 0 24 24"><path fill="currentColor" d="M15.009,13.805h-0.636l-0.22-0.219c0.781-0.911,1.256-2.092,1.256-3.386 c0-2.876-2.332-5.207-5.207-5.207c-2.876,0-5.208,2.331-5.208,5.207s2.331,5.208,5.208,5.208c1.293,0,2.474-0.474,3.385-1.255 l0.221,0.22v0.635l4.004,3.999l1.194-1.195L15.009,13.805z M10.201,13.805c-1.991,0-3.605-1.614-3.605-3.605 s1.614-3.605,3.605-3.605s3.605,1.614,3.605,3.605S12.192,13.805,10.201,13.805z"></path></svg>
           </button>
@@ -162,7 +161,7 @@ const GroupInfo = ({ selectedChat,setSearch  }) => {
         })}
       </div>
       <div className="w-full h-[113px] bg-secondary mt-3 pl-10 pr-8 flex flex-col">
-        <div className="flex items-center w-full h-[50px]">
+        <div className="flex items-center w-full h-[50px] cursor-pointer">
           <div className="flex text-red-400 gap-5">
             <button>
               <svg
@@ -181,12 +180,12 @@ const GroupInfo = ({ selectedChat,setSearch  }) => {
               </svg>
             </button>
             <div>
-              <h1 className="text-red-400">Keluar Group</h1>
+              <h1 className="text-red-400">Exit Group</h1>
             </div>
           </div>
         </div>
 
-        <div className="flex items-center w-full h-[50px]">
+        <div className="flex items-center w-full h-[50px] cursor-pointer">
           <div className="flex text-red-400 gap-5">
             <button>
               <svg
@@ -209,7 +208,7 @@ const GroupInfo = ({ selectedChat,setSearch  }) => {
               </svg>
             </button>
             <div>
-              <h1 className="text-red-400">Laporkan Group</h1>
+              <h1 className="text-red-400">Report Group</h1>
             </div>
           </div>
         </div>

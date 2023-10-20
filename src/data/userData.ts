@@ -1,5 +1,6 @@
 
 export type User = {
+    isGroupChat: boolean;
     id: number;
     name: string;
     username: string;
@@ -11,13 +12,15 @@ export type User = {
       id: 1,
       name: "John Doe",
       username: "johndoe",
-      avatar: "../Images/man.jpg",
+      avatar: "../Images/man.jpg", 
+      isGroupChat: false,
     },
     {
       id: 2,
       name: "Jane Smith",
       username: "janesmith",
       avatar: "../Images/man2.jpg",
+      isGroupChat: false
     },
     // Add more dummy users as needed
   ];
